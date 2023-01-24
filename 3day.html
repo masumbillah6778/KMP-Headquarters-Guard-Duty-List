@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="fontawesome6/css/fontawesome.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/x-icon" href="logo.png">
+<title> সদর দপ্তর গার্ড ডিউটির তালিকা </title>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nov {
+  background: url('kmp.jpg'), Black;
+  background-size: cover;
+  /*background-image: linear-gradient(to right, Green ,  Red , Yellow ,  Blue);*/
+  width: 100%;
+  height: 110px;
+  top: 0;
+  position: fixed;
+  border: 5px solid Black;
+}
+
+.nov a {
+  background: Green;
+  color: White;
+  margin: 40px 0px;
+  padding: 5px;
+  font-size: 8px;
+  font-family: 'Tiro Bangla', serif;
+  border: 2px solid Red;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.nov a.active {
+  background: Blue;
+  color: White;
+  border: 2px solid Yellow;
+}
+
+.nov a:hover {
+  background: Red;
+  color: White;
+  border: 2px solid Green;
+}
+
+.fhour {
+  background: Pink;
+}
+
+.shour {
+  background: lawngreen;
+}
+
+h1 {
+  color: Red;
+  margin-top: 120px;
+  font-family: 'Tiro Bangla', serif;
+  text-align: center;
+}
+
+h2 {
+  background: Yellow;
+  color: Green;
+  padding: 5px;
+  font-family: 'Tiro Bangla', serif;
+  border: 2px solid Red;
+  text-align: center;
+}
+
+h3 {
+  color: Blue;
+  font-family: 'Tiro Bangla', serif;
+  text-align: center;
+}
+
+
+.outer-wrapper {
+  width: 100%;
+  margin: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+  /*max-width: fit-content;
+  max-height: fit-content;*/
+
+    
+}
+
+.table-wrapper {
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: fit-content;
+  max-height: 66.4vh;
+  margin-top: 5px;
+  margin: 5px;
+  padding-bottom: 5px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+table {
+  background: ;
+  color: ;
+  width: 100%;
+  font-family: 'Tiro Bangla', serif;
+  border-collapse: collapse;
+  border-spacing: 20px;
+  border: 3px solid Olive;
+}
+
+tr {
+  background: ;
+  color: White;
+}
+
+tr:nth-child(even){
+  background-color: lightgrey;
+}
+
+.grid-item {
+  position: flex;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+#img th {
+  background: url('logo.png'), Black;
+  background-size: cover;
+  color: White;
+  padding: 5px;
+  text-align: center;
+  text-shadow: 2px 2px Black;
+  border: 2px solid White;
+}
+
+td {
+  color: Black;
+  text-align: left;
+  padding: 8px;
+  border: 2px solid black;
+}
+
+@media (max-width:1200px){
+
+
+   .container{
+      margin:0;
+   }
+
+}
+
+@media (max-width:450px){
+
+   .container .main-video-container .main-vid-title{
+      font-size: 15px;
+      text-align: center;
+   }
+}
+
+
+
+
+.color {
+  display: flex;
+}
+
+.box-1 {
+  background: Yellow;
+  width: 33.33%;
+  height: 30px;
+}
+
+.box-2 {
+  background: Magenta;
+  width: 33.33%;
+  height: 30px;
+}
+
+.box-3 {
+  background: Blue;
+  width: 33.33%;
+  height: 30px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, Green ,  Red , Yellow ,  Blue);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, Green ,  Red , Yellow ,  Blue);
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<div class="nov">
+  <a href="index.html"> ১ম দিন </a>
+  <a href="2day.html"> ২য় দিন </a>
+  <a class="active" href="#"> ৩য় দিন </a>
+  <a href="4day.html"> ৪র্থ দিন </a>
+  <a href="5day.html"> ৫ম দিন </a>
+  <a href="6day.html"> ৬ষ্ঠ দিন </a>
+  <a href="7day.html"> ৭ম দিন </a>
+  <a href="8day.html"> ৮ম দিন </a>
+</div>
+
+
+
+<!--<h1> ২ ঘন্টা করে ডিউটির তালিকা </h1>
+<h2> সোমবার </h2>
+<h3> গেট ডিউটির তালিকা </h3>
+
+
+
+
+<div class="outer-wrapper">
+<div class="table-wrapper">
+<table>
+  <thead class="grid-item">
+  <tr id="img">
+    <th>নং</th>
+    <th>নাম</th>
+    <th>১ম পালা</th>
+    <th>২য় পালা</th>
+    <th>৩য় পালা</th>
+    <th>৪র্থ পালা</th>
+  </tr>
+  </thead>
+  
+  </tbody>
+  <tr>
+    <td>১</td>
+    <td style="background: ; color: White; text-align: center;"></td>
+    <td>সকাল ৮ টা থেকে সকাল ১০ টা পর্যন্ত </td>
+    <td>দুপুর ২ টা থেকে বিকাল ৪ টা পর্যন্ত </td>
+    <td>রাত ৮ টা থেকে রাত ১০ টা পর্যন্ত </td>
+    <td>রাত ২ টা থেকে রাত ৪ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>২</td>
+    <td style="background: ; color: White; text-align: center;"></td>
+    <td>সকাল ১০ টা থেকে দুপুর ১২ টা পর্যন্ত </td>
+    <td>বিকাল ৪ টা থেকে সন্ধা ৬ টা পর্যন্ত </td>
+    <td>রাত ১০ টা থেকে রাত ১২ টা পর্যন্ত </td>
+    <td>রাত ৪ টা থেকে ভোর ৬ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>৩</td>
+    <td style="background: ; color: White; text-align: center;"></td>
+    <td>দুপুর ১২ টা থেকে দুপুর ২ টা পর্যন্ত </td>
+    <td>সন্ধা ৬ টা থেকে রাত ৮ টা পর্যন্ত </td>
+    <td>রাত ১২ টা থেকে রাত ২ টা পর্যন্ত </td>
+    <td>ভোর ৬ টা থেকে সকাল ৮ টা পর্যন্ত </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+
+
+<h3> ব্যারাক ডিউটির তালিকা </h3>
+<div class="outer-wrapper">
+  <div class="table-wrapper">
+  <table>
+    <thead class="grid-item">
+    <tr id="img">
+    <th>নং</th>
+    <th>নাম</th>
+    <th>১ম পালা</th>
+    <th>২য় পালা</th>
+    <th>৩য় পালা</th>
+    <th>৪র্থ পালা</th>
+  </tr>
+  
+  <tr>
+    <td>১</td>
+    <td style="background: ; color: Black; text-align: center;"></td>
+    <td>সকাল ৮ টা থেকে সকাল ১০ টা পর্যন্ত </td>
+    <td>দুপুর ২ টা থেকে বিকাল ৪ টা পর্যন্ত </td>
+    <td>রাত ৮ টা থেকে রাত ১০ টা পর্যন্ত </td>
+    <td>রাত ২ টা থেকে রাত ৪ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>২</td>
+    <td style="background: ; color: Black; text-align: center;"></td>
+    <td>সকাল ১০ টা থেকে দুপুর ১২ টা পর্যন্ত </td>
+    <td>বিকাল ৪ টা থেকে সন্ধা ৬ টা পর্যন্ত </td>
+    <td>রাত ১০ টা থেকে রাত ১২ টা পর্যন্ত </td>
+    <td>রাত ৪ টা থেকে ভোর ৬ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>৩</td>
+    <td style="background: ; color: Black; text-align: center;"></td>
+    <td>দুপুর ১২ টা থেকে দুপুর ২ টা পর্যন্ত </td>
+    <td>সন্ধা ৬ টা থেকে রাত ৮ টা পর্যন্ত </td>
+    <td>রাত ১২ টা থেকে রাত ২ টা পর্যন্ত </td>
+    <td>ভোর ৬ টা থেকে সকাল ৮ টা পর্যন্ত </td>
+  </tr>
+</table>
+</div>
+</div>
+
+
+
+
+<h3> সালামি ডিউটির তালিকা </h3>
+<div class="outer-wrapper">
+  <div class="table-wrapper">
+  <table>
+    <thead class="grid-item">
+    <tr id="img">
+    <th>নং</th>
+    <th>নাম</th>
+    <th>১ম পালা</th>
+    <th>২য় পালা</th>
+    <th>৩য় পালা</th>
+    <th>৪র্থ পালা</th>
+  </tr>
+  
+  <tr>
+    <td>১</td>
+    <td style="background: ; color: Black; text-align: center;"></td>
+    <td>সকাল ৮ টা থেকে সকাল ১০ টা পর্যন্ত </td>
+    <td>দুপুর ২ টা থেকে বিকাল ৪ টা পর্যন্ত </td>
+    <td>রাত ৮ টা থেকে রাত ১০ টা পর্যন্ত </td>
+    <td>রাত ২ টা থেকে রাত ৪ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>২</td>
+    <td style="background: ; color: Black; text-align: center;"></td>
+    <td>সকাল ১০ টা থেকে দুপুর ১২ টা পর্যন্ত </td>
+    <td>বিকাল ৪ টা থেকে সন্ধা ৬ টা পর্যন্ত </td>
+    <td>রাত ১০ টা থেকে রাত ১২ টা পর্যন্ত </td>
+    <td>রাত ৪ টা থেকে ভোর ৬ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>৩</td>
+    <td style="background: ; color: Black; text-align: center;"></td>
+    <td>দুপুর ১২ টা থেকে দুপুর ২ টা পর্যন্ত </td>
+    <td>সন্ধা ৬ টা থেকে রাত ৮ টা পর্যন্ত </td>
+    <td>রাত ১২ টা থেকে রাত ২ টা পর্যন্ত </td>
+    <td>ভোর ৬ টা থেকে সকাল ৮ টা পর্যন্ত </td>
+  </tr>
+</table>
+
+</div>
+</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<h1> ৪ ঘন্টা করে ডিউটির তালিকা </h1>
+<h2> ৩য় দিন </h2>
+
+
+
+
+<h3> গেট ডিউটির তালিকা </h3>
+<div class="outer-wrapper">
+  <div class="table-wrapper">
+  <table>
+    <thead class="grid-item">
+    <tr id="img">
+    <th>নং</th>
+    <th>নাম</th>
+    <th>১ম পালা</th>
+    <th>২য় পালা</th>
+  </tr>
+  
+  <tr>
+    <td>১</td>
+    <td style="background: Pink; color: Black; text-align: center;">F</td>
+    <td>সকাল ৮ টা থেকে দুপুর ১২ টা পর্যন্ত </td>
+    <td>রাত ৮ টা থেকে রাত ১২ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>২</td>
+    <td style="background: Magenta; color: Black; text-align: center;">H</td>
+    <td> দুপুর ১২ টা থেকে দুপুর ৪ টা পর্যন্ত </td>
+    <td> রাত ১২ টা থেকে রাত ৪ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>৩</td>
+    <td style="background: Red; color: White; text-align: center;">A</td>
+    <td> দুপুর ৪ টা থেকে রাত ৮ টা পর্যন্ত </td>
+    <td> রাত ৪ টা থেকে সকাল ৮ টা পর্যন্ত </td>
+  </tr>
+</table>
+</div>
+</div>
+
+
+
+
+
+<h3> ব্যারাক ডিউটির তালিকা </h3>
+<div class="outer-wrapper">
+  <div class="table-wrapper">
+  <table>
+    <thead class="grid-item">
+    <tr id="img">
+    <th>নং</th>
+    <th>নাম</th>
+    <th>১ম পালা</th>
+    <th>২য় পালা</th>
+  </tr>
+  
+  <tr>
+    <td>১</td>
+    <td style="background: Blue; color: White; text-align: center;">C</td>
+    <td>সকাল ৮ টা থেকে দুপুর ১২ টা পর্যন্ত </td>
+    <td>রাত ৮ টা থেকে রাত ১২ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>২</td>
+    <td style="background: Lime; color: Black; text-align: center;">G</td>
+    <td> দুপুর ১২ টা থেকে দুপুর ৪ টা পর্যন্ত </td>
+    <td> রাত ১২ টা থেকে রাত ৪ টা পর্যন্ত </td>
+  </tr>
+  
+  <tr>
+    <td>৩</td>
+    <td style="background: Yellow; color: Black; text-align: center;">D</td>
+    <td> দুপুর ৪ টা থেকে রাত ৮ টা পর্যন্ত </td>
+    <td> রাত ৪ টা থেকে সকাল ৮ টা পর্যন্ত </td>
+  </tr>
+</table>
+</div>
+</div>
+
+
+
+
+<h3> সালামি ডিউটির তালিকা </h3>
+<div class="outer-wrapper">
+  <div class="table-wrapper">
+  <table>
+    <thead class="grid-item">
+    <tr id="img">
+    <th>নং</th>
+    <th>নাম</th>
+    <th>১ম পালা</th>
+    <th>২য় পালা</th>
+  </tr>
+  
+  <tr>
+    <td>১</td>
+    <td style="background: Green; color: white; text-align: center;">B</td>
+    <td> সকাল ১০ টা থেকে দুপুর ২ টা পর্যন্ত </td>
+    <td> - </td>
+  </tr>
+  
+  <tr>
+    <td>২</td>
+    <td style="background: Cyan; color: Black; text-align: center;">E</td>
+    <td> - </td>
+    <td> দুপুর ২ টা থেকে সন্ধা ৮ টা পর্যন্ত </td>
+  </tr>
+</table>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="color">
+<div class="box-1"></div>
+<div class="box-2"></div>
+<div class="box-3"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+/*////////////////// Diwali Effect ///////////////////////*/
+    
+
+
+// This Script Is Created On Occation Of Diwali On Dated 30-Oct-2016
+// Dj Pankaj 9648786143 From Lucknow
+// PhpMafia.Net
+// <![CDATA[
+    var bits=80; // how many bits
+    var speed=33; // how fast - smaller is faster
+    var bangs=5; // how many can be launched simultaneously (note that using too many can slow the script down)
+    var colours=new Array("blue", "red", "cyan", "purple", "orange", "lime", "green", "white", "yellow"); 
+    //                     blue    red     green   purple  cyan    orange  pink
+    
+    /****************************
+    *    Diwali Rocket Effect   *
+    *  Producer : PhpMafia.Net  *
+    *  phpmafia.net@gmail.com   *
+    * Contact : 0-96-48-786-143 *
+    ****************************/
+    var bangheight=new Array();
+    var intensity=new Array();
+    var colour=new Array();
+    var Xpos=new Array();
+    var Ypos=new Array();
+    var dX=new Array();
+    var dY=new Array();
+    var stars=new Array();
+    var decay=new Array();
+    var swide=800;
+    var shigh=600;
+    var boddie;
+    
+    window.onload=function() { if (document.getElementById) {
+      var i;
+      boddie=document.createElement("div");
+      boddie.style.position="fixed";
+      boddie.style.top="0px";
+      boddie.style.left="0px";
+      boddie.style.overflow="visible";
+      boddie.style.width="1px";
+      boddie.style.height="1px";
+      boddie.style.backgroundColor="transparent";
+      document.body.appendChild(boddie);
+      set_width();
+      for (i=0; i<bangs; i++) {
+        write_fire(i);
+        launch(i);
+        setInterval('stepthrough('+i+')', speed);
+      }
+    }}
+    
+    function write_fire(N) {
+      var i, rlef, rdow;
+      stars[N+'r']=createDiv('|', 12);
+      boddie.appendChild(stars[N+'r']);
+      for (i=bits*N; i<bits+bits*N; i++) {
+        stars[i]=createDiv('★', 13);
+        boddie.appendChild(stars[i]);
+      }
+    }
+    
+    function createDiv(char, size) {
+      var div=document.createElement("div");
+      div.style.font=size+"px monospace";
+      div.style.position="absolute";
+      div.style.backgroundColor="transparent";
+      div.appendChild(document.createTextNode(char));
+      return (div);
+    }
+    
+    function launch(N) {
+      colour[N]=Math.floor(Math.random()*colours.length);
+      Xpos[N+"r"]=swide*0.5;
+      Ypos[N+"r"]=shigh-5;
+      bangheight[N]=Math.round((0.5+Math.random())*shigh*0.4);
+      dX[N+"r"]=(Math.random()-0.5)*swide/bangheight[N];
+      if (dX[N+"r"]>1.25) stars[N+"r"].firstChild.nodeValue="/";
+      else if (dX[N+"r"]<-1.25) stars[N+"r"].firstChild.nodeValue="\\";
+      else stars[N+"r"].firstChild.nodeValue="|";
+      stars[N+"r"].style.color=colours[colour[N]];
+    }
+    
+    function bang(N) {
+      var i, Z, A=0;
+      for (i=bits*N; i<bits+bits*N; i++) { 
+        Z=stars[i].style;
+        Z.left=Xpos[i]+"px";
+        Z.top=Ypos[i]+"px";
+        if (decay[i]) decay[i]--;
+        else A++;
+        if (decay[i]==15) Z.fontSize="7px";
+        else if (decay[i]==7) Z.fontSize="2px";
+        else if (decay[i]==1) Z.visibility="hidden";
+        Xpos[i]+=dX[i];
+        Ypos[i]+=(dY[i]+=1.25/intensity[N]);
+      }
+      if (A!=bits) setTimeout("bang("+N+")", speed);
+    }
+    
+    function stepthrough(N) { 
+      var i, M, Z;
+      var oldx=Xpos[N+"r"];
+      var oldy=Ypos[N+"r"];
+      Xpos[N+"r"]+=dX[N+"r"];
+      Ypos[N+"r"]-=4;
+      if (Ypos[N+"r"]<bangheight[N]) {
+        M=Math.floor(Math.random()*3*colours.length);
+        intensity[N]=5+Math.random()*4;
+        for (i=N*bits; i<bits+bits*N; i++) {
+          Xpos[i]=Xpos[N+"r"];
+          Ypos[i]=Ypos[N+"r"];
+          dY[i]=(Math.random()-0.5)*intensity[N];
+          dX[i]=(Math.random()-0.5)*(intensity[N]-Math.abs(dY[i]))*1.25;
+          decay[i]=16+Math.floor(Math.random()*16);
+          Z=stars[i];
+          if (M<colours.length) Z.style.color=colours[i%2?colour[N]:M];
+          else if (M<2*colours.length) Z.style.color=colours[colour[N]];
+          else Z.style.color=colours[i%colours.length];
+          Z.style.fontSize="13px";
+          Z.style.visibility="visible";
+        }
+        bang(N);
+        launch(N);
+      }
+      stars[N+"r"].style.left=oldx+"px";
+      stars[N+"r"].style.top=oldy+"px";
+    } 
+    
+    window.onresize=set_width;
+    function set_width() {
+      var sw_min=999999;
+      var sh_min=999999;
+      if (document.documentElement && document.documentElement.clientWidth) {
+        if (document.documentElement.clientWidth>0) sw_min=document.documentElement.clientWidth;
+        if (document.documentElement.clientHeight>0) sh_min=document.documentElement.clientHeight;
+      }
+      if (typeof(self.innerWidth)!="undefined" && self.innerWidth) {
+        if (self.innerWidth>0 && self.innerWidth<sw_min) sw_min=self.innerWidth;
+        if (self.innerHeight>0 && self.innerHeight<sh_min) sh_min=self.innerHeight;
+      }
+      if (document.body.clientWidth) {
+        if (document.body.clientWidth>0 && document.body.clientWidth<sw_min) sw_min=document.body.clientWidth;
+        if (document.body.clientHeight>0 && document.body.clientHeight<sh_min) sh_min=document.body.clientHeight;
+      }
+      if (sw_min==999999 || sh_min==999999) {
+        sw_min=800;
+        sh_min=600;
+      }
+      swide=sw_min;
+      shigh=sh_min;
+    }
+    // ]]>   
+  
+    </script>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
